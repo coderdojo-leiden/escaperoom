@@ -1,7 +1,7 @@
 # Escaperoom
 *Bouw een escaperoom in Scratch*
 
-In deze opdracht gaan we zelf een escaperoom bouwen. We beginnen in een kamer met wat spuillen (zoals een tapijt, een schilderij, en een kluis). De deur in die kamer is 'op slot'. Het doel van het spel is om de deur open te maken door erop te klikken, zodat je naar buiten kunt.
+In deze opdracht gaan we zelf een escaperoom bouwen. We beginnen in een kamer met wat spullen (zoals een tapijt, een schilderij, en een kluis). De deur in die kamer is 'op slot'. Het doel van het spel is om de deur open te maken door erop te klikken, zodat je naar buiten kunt.
 
 Zo ziet het er uit als je de opdracht klaar hebt:
 
@@ -9,7 +9,7 @@ Zo ziet het er uit als je de opdracht klaar hebt:
 
 We beginnen met een leeg project waar alle benodigde sprites al in zitten. Op deze manier hoef je je alleen maar druk te maken om de code-blokken! Dit lege project kun je in de Scratch editor openen via ons [escaperoom startproject](https://scratch.mit.edu/projects/629181159/editor).
 
-## Start situatie
+## Startsituatie
 
 We beginnen om alle sprites een goede startpositie te geven als we ons spel starten. Mocht er tijdens het spel per ongeluk iets verschuiven, dan weten we dat de volgende keer alles weer goed staat zoals we hebben bedoeld.
 
@@ -77,7 +77,7 @@ Bij een escaperoom moet je op zoek gaan naar aanwijzingen om te ontsnappen. In o
 
 Al deze eigenschappen gaan we nu maken!
 
-### Aanwijzingen: wisselen van uiterlijk
+### Aanwijzingen zoeken: wisselen van uiterlijk
 
 Als eerste willen we zorgen dat je het tapijt op kan tillen, en het schilderij opzij kan schuiven, als je er op klikt. Nog een keer klikken moet alles weer terugzetten. Dit doen we door gebruik te maken van de verschillende uiterlijken bij iedere sprite.
 
@@ -89,14 +89,14 @@ Als eerste willen we zorgen dat je het tapijt op kan tillen, en het schilderij o
 
 > Kun jij dit nu ook doen voor de **schilderij**-sprite?
 
-### De code weergeven: een uiterlijk bewerken
+### De kluiscode weergeven: een uiterlijk bewerken
 
-Je zag misschien dat er nog geen code op de mur geschreven stond, toen we op het schilderij klikten. We gaan nu een **zelf bedachte code** op de muur achter het schilderij zetten, door het uiterlijk van het opzij geschoven schilderij te bewerken.
+Toen je op het schilderij klikte, was het je misschien opgevallen dat er nog geen code op de muur geschreven stond. We gaan nu een **zelf bedachte code** op de muur achter het schilderij zetten, door het uiterlijk van het opzij geschoven schilderij te bewerken.
 
 1. Selecteer de **schilderij**-sprite
 2. Klik bovenaan op de tab 'Uiterlijken'
 3. Selecteer nu het tweede uiterlijk door er op te klikken.  
-   Als het goed is zie je nu het opzij geschoven schiulderij in het midden van het scherm
+   Als het goed is zie je nu het opzij geschoven schilderij in het midden van het scherm
 4. Je kunt het plaatje iets groter of kleiner op je scherm krijgen door de `+` en `-` knopjes te gebruiken onderaan het scherm:  
    ![Uiterlijk - zoom](images/costume-zoom.png)
 5. Klik nu op het Tekst-tool: ![Uiterlijk-tekst](images/costume-tool-text.png)
@@ -107,11 +107,11 @@ Je zag misschien dat er nog geen code op de mur geschreven stond, toen we op het
 8. Doe dit ook voor de andere getallen uit je code, en zet ze op een iets andere plek.
 9. Als je klaar bent, klik dan eens afwisselend op uiterlijk 1 en uiterlijk 2. Ben je tevreden met het resultaat? Anders kun je misschien nog wat bewerken tot je tevreden bent.
 
-### De kluis openen
+## De kluis openen
 
 Als je de kluis wilt openen, moeten we om een code vragen. En als die code goed is ingevuld, gaat de kluis open. Wat moeten we daarvoor doen?
 
-#### Waarnemen
+#### De kluiscode vragen: waarnemen
 
 Als je in Scratch iets wilt vragen aan de gebruiker, of kijken of er misschien een toets is ingedrukt, of dat de muis misschien beweegt, heet dat "Waarnemen". Dit gaan we hier gebruiken.
 
@@ -121,6 +121,8 @@ Als je in Scratch iets wilt vragen aan de gebruiker, of kijken of er misschien e
    ![Waarnemen - vraag en wacht](images/nl/sensing-ask-wait.png)
 4. Pas de vraag aan naar `Wat is de code?`
 
+#### De kluiscode controleren en de deur openen: besturen
+
 Nu moeten we alleen de kluis openen als de goede code wordt ingevoerd. Of, anders gezegd:
 
     ALS het antwoord hetzelfde is als de code op de muur
@@ -128,12 +130,41 @@ Nu moeten we alleen de kluis openen als de goede code wordt ingevoerd. Of, ander
     
 Om dit te kunnen doen, maken we in Scratch gebruik van de blokjes onder "Besturen". Dit kan zijn dat we ergens op willen wachten, of een als-dan vraag willen gebruiken, of zelf iets meerdere keren (of voor altijd) herhalen.
 
-1. 
+1. Zoek nu bij *Besturen* het volgende blokje, sleep deze naar je code-veld, en zet hem vast onder de vraag `Wat is de code?`:  
+   ![Besturen - als dan](images/nl/control-ifthen.png)
+2. De `ALS` en `DAN` hebben we. Nu nog controleren of het antwoord hetzelfde is als onze code op de muur.  
+   Zoek hiervoor bij *Functies* naar het volgende blokje, en sleep deze precies op de goede plek op het als-dan blokje:  
+   ![Functies - gelijk aan](images/operators-equal.png)
+3. In dit groene blokje komt aan de linkerkant het antwoord op de vraag te staan. Zoek dit op bij *Waarnemen* en sleep deze naar het **linker** vakje van het groene blokje:  
+   ![Waarnemen - antwoord](images/nl/sensing-answer.png)
+4. Het **rechter** vakje moet nu hetzelfde zijn als jouw eigen code op de muur! Pas dus het getal `50` aan naar jouw eigen code.
+5. Een open kluis is bij de sprite opgeslagen als het tweede uiterlijk. Kun jij nu binnen het als-dan blokje het uiterlijk veranderen als de code goed is? Wat heb je hiervoor nodig?
 
-#### Signalen
+Er is nog één dingetje wat we vergeten zijn: we moeten alléén de code vragen als de kluisdeur dicht is. Anders gezegd:
 
+    ALS het uiterlijk-nummer hetzelfde is als 1
+    DAN moet ik de code vragen en controleren
 
+> Kun jij nu met een als-dan blokje (*Functies*) en een uiterlijk-nummer (*Uiterlijken*) zorgen dat alleen de code wordt gevraagd als de kluis nog dicht is?
 
+##### EXTRA
 
+Als je de uiterlijk-nummers lastig vindt (wat is nou ook alweer 1 en 2?), kun je elk uiterlijk ook een *naam* geven. Daarmee kun je je code beter leesbaar maken:
 
-### 
+    ALS het uiterlijk een dichte kluis is
+    DAN moet ik de code vragen en controleren
+
+> Kun je eens kijken of je de naam bij de uiterlijken kunt veranderen naar bijvoorbeeld `dichte kluis` en `open kluis`?  
+> 
+> Wat zie je veranderen in het code blok wanneer op de groene vlag is geklikt?  
+> 
+> Wat zou je aan kunnen passen in je code blok wanneer op de sprite wordt geklikt, om van deze naam gebruik te maken?  
+> Wat vind je zelf makkelijker?
+
+## De sleutel gebruiken
+
+De kluis is inmiddels open. Nu willen we dus de sleutel laten zien, en de sleutel moet ook gebruikt worden om de deur van het slot te halen.
+
+### De sleutel tonen: signalen
+
+`ToDO`
