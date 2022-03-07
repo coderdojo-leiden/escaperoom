@@ -5,9 +5,9 @@ In deze opdracht gaan we zelf een escaperoom bouwen. We beginnen in een kamer me
 
 Zo ziet het er uit als je de opdracht klaar hebt:
 
-[escaperoom finished project](images/nl/finished-project.gif)
+![escaperoom voltooid project](images/nl/finished-project.gif)
 
-We beginnen met een leeg project waar alle benodigdheden al in sprites zitten. Op deze manier hoef je je alleen maar druk te maken om de code-blokken! Dit lege project kun je in de Scratch editor openen via ons [escaperoom start project](https://scratch.mit.edu/projects/629181159/editor).
+We beginnen met een leeg project waar alle benodigde sprites al in zitten. Op deze manier hoef je je alleen maar druk te maken om de code-blokken! Dit lege project kun je in de Scratch editor openen via ons [escaperoom startproject](https://scratch.mit.edu/projects/629181159/editor).
 
 ## Start situatie
 
