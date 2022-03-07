@@ -1,9 +1,13 @@
-# Escape room
+# Escaperoom
 *Bouw een escaperoom in Scratch*
 
 In deze opdracht gaan we zelf een escaperoom bouwen. We beginnen in een kamer met wat spuillen (zoals een tapijt, een schilderij, en een kluis). De deur in die kamer is 'op slot'. Het doel van het spel is om de deur open te maken door erop te klikken, zodat je naar buiten kunt.
 
-We beginnen met een leeg project waar alle benodigdheden al in sprites zitten. Op deze manier hoef je je allen maar druk te maken om de code-blokken! Dit lege project kun je in de Scratch editor openen via ons [escaperoom scratch project](https://scratch.mit.edu/projects/629181159/editor).
+Zo ziet het er uit als je de opdracht klaar hebt:
+
+[escaperoom finished project](images/nl/finished-project.gif)
+
+We beginnen met een leeg project waar alle benodigdheden al in sprites zitten. Op deze manier hoef je je alleen maar druk te maken om de code-blokken! Dit lege project kun je in de Scratch editor openen via ons [escaperoom start project](https://scratch.mit.edu/projects/629181159/editor).
 
 ## Start situatie
 
