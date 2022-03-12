@@ -167,4 +167,37 @@ De kluis is inmiddels open. Nu willen we dus de sleutel laten zien, en de sleute
 
 ### De sleutel tonen: signalen
 
-`ToDO`
+De sleutel en de kluis zijn twee verschillende sprites. Omdat je alleen scratch blokken voor één sprite kan maken, hebben we een manier nodig waarmee de ene met de andere sprite kan 'praten'. Dit doen we met signalen: De kluis stuurt een signaal dat hij open is, en vervolgens kan iedere andere sprite naar dat signaaal luisteren.
+
+1. Selecteer de **kluis**-sprite
+2. Zoek nu bij *Gebeurtenissen* het volgende blokje, sleep deze naar je code-veld, en zet hem vast onderaan in het als-dan blokje waar je in de vorige opdracht het uiterlijk hebt gewisseld:  
+   ![Gebeurtenissen - zend signaal](images/nl/events-broadcast.png)
+3. Klik nu op `bericht1` en kies hier "Nieuw bericht"
+4. Gebruik als naam bijvoorbeeld `Kluis is open`
+
+Er is nu een signaal ingesteld zodra er een goede code is ingevuld. Nu moeten we de sleutel laten reageren op dat berichtje, en laten verschijnen.
+
+1. Selecteer de **sleutel**-sprite
+2. Zoek nu bij *Gebeurtenissen* het volgende blokje, en sleep deze naar een leeg plekje in je code-veld:  
+   ![Gebeurtenissen - ontvang signaal](images/nl/events-receive.png)
+3. Klik nu op `bericht1` en kies hier het bericht wat je hierboven hebt ingevuld (bijvoorbeeld `Kluis is open`)
+4. Zoek bij *Uiterlijken* het volgende blokje, en sleep deze naar je code-veld en maak hem vast aan het gele gebeurtenis blokje:  
+   ![Uiterlijken | verschijn](images/nl/looks-show.png)
+
+Test je code door op het net gemaakte blokje te dubbelklikken. Verschijnt de sleutel nu?
+
+Het kan zijn dat de sleutel niet verschijnt/ of misschien zelfs op de verkeerde plek. We willen dat de sleutel "in" de kluis ligt: de sprite moet dus op de voorgrond getoond worden, en de positie moet ook goed zijn. Dit heb je al eerder gedaan:
+
+1. Sleep eerst het sleuteltje naar de goede plek (dus in de kluis) in het voorbeeld scherm rechtsboven.
+2. Als dit goed staat, zoek dan bij *Beweging* het volgende blokje, en sleep deze naar je code-veld vlak **boven** het "verdwijn"-blokje bij de groene vlag gebeurtenis:  
+   ![Beweging | ga naar x y](images/nl/motion-goto_x_y.png)  
+   Het getal achter de `x` en de `y` zijn nu niet nul, maar een ander getal (bijvoorbeeld `-89` en `28`.
+3. Zoek bij *Uiterlijken* het volgende blokje, sleep deze naar je code-veld, en zet hem vast onder het "verschijn"-blokje:  
+   ![Uiterlijken | ga naar voorgrond](images/nl/looks-front-layer.png)
+
+Als het goed is kun je beide blokjes testen door erop te dubbelklikken: Bij de ene verdwijnt het, en bij de andere verschijnt het voor de kluis.
+
+### De sleutel naar de deur slepen
+
+`ToDo`
+
