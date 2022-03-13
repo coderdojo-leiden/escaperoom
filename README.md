@@ -220,10 +220,11 @@ De sleutel moet dus de muisaanwijzer blijven volgen **totdat** we de muisknop we
     HERHAAL TOT de muis niet meer is ingedrukt
         ga naar de muisaanwijzer
 
-Hiervoor bestaan de volgende conditie-blokjes:  
+Hiervoor bestaan de volgende conditie-blokjes:
+
 * ![Functies - niet](images/nl/operators-not.png)
 * ![Waarnemen - muis ingedrukt](images/nl/sensing-mousedown.png)
-* ![Beweging | ga naar muisaanwijzer](images/nl/motion-goto.png)
+* ![Beweging - ga naar muisaanwijzer](images/nl/motion-goto.png)
 
 > Kun jij het herhaal blokje nu afmaken door de blokjes hierboven op de goede manier te gebruiken?
 
