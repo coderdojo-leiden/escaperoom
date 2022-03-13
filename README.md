@@ -140,6 +140,11 @@ Om dit te kunnen doen, maken we in Scratch gebruik van de blokjes onder "Besture
 4. Het **rechter** vakje moet nu hetzelfde zijn als jouw eigen code op de muur! Pas dus het getal `50` aan naar jouw eigen code.
 5. Een open kluis is bij de sprite opgeslagen als het tweede uiterlijk. Kun jij nu binnen het als-dan blokje het uiterlijk veranderen als de code goed is? Wat heb je hiervoor nodig?
 
+De code die je hebt ingevuld achter de als-vraag heet een **conditie**. Iets wat waar of niet waar is. Of waar je met Ja of Nee op kunt antwoorden. In Scratch herken je deze aan de hoekige zijkantjes op een blok:  
+![Conditie](images/condition.png)
+
+> Kun je er een paar vinden bij *Waarnemen* en *Functies*?
+
 Er is nog één dingetje wat we vergeten zijn: we moeten alléén de code vragen als de kluisdeur dicht is. Anders gezegd:
 
     ALS het uiterlijk-nummer hetzelfde is als 1
@@ -156,9 +161,9 @@ Als je de uiterlijk-nummers lastig vindt (wat is nou ook alweer 1 en 2?), kun je
 
 > Kun je eens kijken of je de naam bij de uiterlijken kunt veranderen naar bijvoorbeeld `dichte kluis` en `open kluis`?  
 > 
-> Wat zie je veranderen in het code blok wanneer op de groene vlag is geklikt?  
+> Wat zie je veranderen in het code-blok wanneer op de groene vlag is geklikt?  
 > 
-> Wat zou je aan kunnen passen in je code blok wanneer op de sprite wordt geklikt, om van deze naam gebruik te maken?  
+> Wat zou je aan kunnen passen in je code-blok wanneer op de sprite wordt geklikt, om van deze naam gebruik te maken?  
 > Wat vind je zelf makkelijker?
 
 ## De sleutel gebruiken
@@ -167,7 +172,7 @@ De kluis is inmiddels open. Nu willen we dus de sleutel laten zien, en de sleute
 
 ### De sleutel tonen: signalen
 
-De sleutel en de kluis zijn twee verschillende sprites. Omdat je alleen scratch blokken voor één sprite kan maken, hebben we een manier nodig waarmee de ene met de andere sprite kan 'praten'. Dit doen we met signalen: De kluis stuurt een signaal dat hij open is, en vervolgens kan iedere andere sprite naar dat signaaal luisteren.
+De sleutel en de kluis zijn twee verschillende sprites. Omdat je alleen scratch blokken voor één sprite kan maken, hebben we een manier nodig waarmee de ene met de andere sprite kan 'praten'. Dit doen we met signalen: De kluis stuurt een bericht dat hij open is, en vervolgens kan iedere andere sprite naar dit bericht luisteren.
 
 1. Selecteer de **kluis**-sprite
 2. Zoek nu bij *Gebeurtenissen* het volgende blokje, sleep deze naar je code-veld, en zet hem vast onderaan in het als-dan blokje waar je in de vorige opdracht het uiterlijk hebt gewisseld:  
@@ -197,7 +202,80 @@ Het kan zijn dat de sleutel niet verschijnt/ of misschien zelfs op de verkeerde 
 
 Als het goed is kun je beide blokjes testen door erop te dubbelklikken: Bij de ene verdwijnt het, en bij de andere verschijnt het voor de kluis.
 
-### De sleutel naar de deur slepen
+### De sleutel naar de deur slepen: herhalen
 
-`ToDo`
+Om tijdens het spel een sprite te kunnen slepen, moeten we iets maken waarmee we de sprite de muisaanwijzer laten volgen **zolang** we de muisknop ingedrukt houden. Anders gezegd: de sleutel moet de muisaanwijzer blijven volgen **totdat** we de muisknop weer loslaten.
 
+In Scratch kunnen we gebruik maken van een herhaling. In zo'n blokje vertel je *wat* er de hele tijd herhaald moet worden, en *wanneer* dat dan weer moet stoppen. Net als bij het als-dan blokje, hebben we een **conditie** nodig om te vertellen, wat met de hoekige blokjes gebeurt:  
+![Conditie](images/condition.png)
+
+1. Selecteer de **sleutel**-sprite
+2. Zoek nu bij *Gebeurtenissen* het volgende blokje, en sleep deze naar een leeg plekje in je code-veld:  
+   ![Gebeurtenissen | geklikt op sprite](images/nl/events-spriteclicked.png)
+3. Zoek nu bij *Besturen* het volgende blokje, sleep deze naar je code-veld, en zet hem vast aan de goede gebeurtenis:  
+   ![Besturen - herhaal tot](images/nl/control-repeat-until.png)
+
+De sleutel moet dus de muisaanwijzer blijven volgen **totdat** we de muisknop weer loslaten. Er is alleen geen blokje wat controleert of de muisknop is losgelaten. Maar we kunnen wel controleren of de muisknop is ingedrukt. Daarom gaan we het volgende in een Scratch blokje maken: 
+
+    HERHAAL TOT de muis niet meer is ingedrukt
+        ga naar de muisaanwijzer
+
+Hiervoor bestaan de volgende conditie-blokjes:  
+* ![Functies - niet](images/nl/operators-not.png)
+* ![Waarnemen - muis ingedrukt](images/nl/sensing-mousedown.png)
+* ![Beweging | ga naar muisaanwijzer](images/nl/motion-goto.png)
+
+> Kun jij het herhaal blokje nu afmaken door de blokjes hierboven op de goede manier te gebruiken?
+
+Je kunt het nu testen door op de groene vlag te klikken en de kluis te openen. Kun je de sleutel nu verplaatsen tijdens het spel?
+
+### De deur van het slot halen: als-dan-anders
+
+De volgende stap is de deur te openen als de sleutel voor de deur wordt gebruikt. Dan laten we de sleutel verdwijnen (je hebt hem nu toch niet meer nodig). Maar als de sleutel ergens anders wordt losgelaten (bijvoorbeeld op het tapijt), willen we hem weer terug leggen in de kluis. Zo weet de speler dat er iets anders moet worden gedaan met de sleutel.
+
+Dit kunnen we ook op een andere 'code'-manier zeggen:
+
+    ALS ik de deur raak
+    DAN doe de deur open
+        en laat de sleutel verdwijnen
+    ANDERS
+        ga terug naar de kluis
+
+
+1. Zoek nu bij *Besturen* het als-dan-anders blokje, sleep deze naar het code-veld, en zet deze vast onder het herhaal-blokje:  
+   ![Besturen - als dan anders](images/nl/control-ifthenelse.png)
+2. Zoek bij *Waarnemen* de conditie of je iets raakt, en zet deze op de goede plek in het code-blok  
+
+> Om de deur open te maken, moeten we weer gebruik maken van een signaal, bijvoorbeeld een berichtje `Deur open`. Kun jij dit signaal nu zelf instellen bij de sleutel?  
+
+> Kun jij ook de deur openen, zodra dit signaal wordt ontvangen?  
+> Hint: deze code moet je aan de **deur**-sprite toevoegen!  
+
+> Kun je ook de sleutel laten verdwijnen nadat de deur open is gemaakt?  
+
+> Kun je de sleutel weer terug laten gaan naar de kluis, als hij *niet* de deur heeft geraakt?
+
+## Ontsnappen
+
+Het laatste wat we moeten doen is door de deur naar buiten gaan, en vertellen dat je bent ontsnapt!
+
+### Naar buiten gaan
+
+> Kun jij aan de **deur**-sprite de gebeurtenis toevoegen wanneer op de sprite wordt geklikt, we dan de **ontsnapt!**-sprite laten zien?  
+> Hint 1: je mag alleen de ontsnapt-sprite laten zien als de deur open is! Gebruik een als-dan blokje om te controleren of de deur echt open is (welk uiterlijk moet de deur dan hebben?).  
+> Hint 2: maak gebruik van een signaal om aan de **ontsnapt!**-sprite te laten weten dat hij moet verschijnen. Bijvoorbeeld een bericht `Gewonnen`  
+
+> Kun je ook de **ontsnapt!2**-sprite laten verschijnen als de speler ontsnapt is?  
+> Hunt: Je kunt hetzelfde signaal gebruiken als bij de **ontsnapt!**-sprite.
+
+### Effecten
+
+Gebruik onderstaande code-blokken om een leuk effect toe te voegen aan de **ontsnapt!2**-sprite, zodra deze een bericht ontvangt dat de speler heeft gewonnen.
+
+![Uiterlijken - effecten](images/nl/looks-effects.png)
+
+## Uitbreiden
+
+Als het goed is heb je nu alle belangrijke code toegevoegd om het spel uit te spelen. Kun je het nu helemaal zelf uitspelen? Wat zou je nog willen toevoegen?
+
+Veel speelplezier!
