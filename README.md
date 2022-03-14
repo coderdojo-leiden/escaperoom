@@ -262,12 +262,12 @@ Het laatste wat we moeten doen is door de deur naar buiten gaan, en vertellen da
 
 ### Naar buiten gaan
 
-> Kun jij aan de **deur**-sprite de gebeurtenis toevoegen wanneer op de sprite wordt geklikt, we dan de **ontsnapt!**-sprite laten zien?  
+> Kun jij aan de **deur**-sprite de gebeurtenis toevoegen wanneer op de sprite wordt geklikt, we dan de **ontsnapt!**-sprite (het huisje) laten zien?  
 > Hint 1: je mag alleen de ontsnapt-sprite laten zien als de deur open is! Gebruik een als-dan blokje om te controleren of de deur echt open is (welk uiterlijk moet de deur dan hebben?).  
 > Hint 2: maak gebruik van een signaal om aan de **ontsnapt!**-sprite te laten weten dat hij moet verschijnen. Bijvoorbeeld een bericht `Gewonnen`  
 
-> Kun je ook de **ontsnapt!2**-sprite laten verschijnen als de speler ontsnapt is?  
-> Hunt: Je kunt hetzelfde signaal gebruiken als bij de **ontsnapt!**-sprite.
+> Kun je ook de **ontsnapt!2**-sprite (het bericht "je bent ontsnapt!") laten verschijnen als de speler ontsnapt is?  
+> Hint: Je kunt hetzelfde signaal gebruiken als bij de **ontsnapt!**-sprite.
 
 ### Effecten
 
