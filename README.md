@@ -1,3 +1,6 @@
+---
+title: Bouw een escaperoom in Scratch
+---
 # Escaperoom
 *Bouw een escaperoom in Scratch*
 
