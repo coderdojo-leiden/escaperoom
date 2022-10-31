@@ -1,7 +1,3 @@
----
-title: Build an escape room in Scratch
-permalink: /escaperoom/index_en
----
 # Escaperoom
 *Build an escape room in Scratch*
 
