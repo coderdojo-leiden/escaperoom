@@ -127,7 +127,7 @@ Now we only need to open the safe if the correct code is entered. Or in other wo
 
     IF the answer is the same as the code on the wall
     THEN I open the safe
-
+    
 To do this, we use the blocks under "Control" in Scratch. We might want to wait for something, or use an if-then question, or repeat something several times (or forever).
 
 1. Now find the following block under *Control*, drag it to your code field, and attach it under the question `What is the code?`:  
