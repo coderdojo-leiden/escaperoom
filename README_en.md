@@ -7,7 +7,7 @@ This is what it will look like when you have completed the assignment:
 
 ![escaperoom finished project](images/en/finished-project.gif)
 
-We'll start with an empty project that already has all the necessary sprites in it. This way you only have to worry about the code blocks! You can open this empty project in the Scratch editor via our [escaperoom starter project](https://scratch.mit.edu/projects/629181159/editor). If you use the Sratch offline editor (which you can download [here](https://scratch.mit.edu/download)), you can also download the starter project [here](resources/escaperoom.sb3) and then load it in the offline editor.
+We'll start with an empty project that already has all the necessary sprites in it. This way you only have to worry about the code blocks! You can open this empty project in the Scratch editor via our [escaperoom starter project](https://scratch.mit.edu/projects/629181159/editor). If you use the Sratch offline editor (which you can download [here](https://scratch.mit.edu/download)), you can also download the starter project [here](resources/escaperoom_en.sb3) and then load it in the offline editor.
 
 ## Starting situation
 
@@ -17,7 +17,7 @@ We start with putting all sprites in a good starting position when we start our 
 
 The house should only be shown when the door is open. So it should be hidden when the green flag is pressed. For this the event exists "when ![green flag](images/green-flag.png) clicked".
 
-1. Select the **ontsnapt!**-sprite
+1. Select the **escaped!**-sprite
 2. Find the following block under *Events*:  
    ![Events | green flag](images/en/events-greenflag.png)
 3. Drag this to the large white area in the middle
@@ -32,7 +32,7 @@ You can check if your code works in two ways:
 
 If all goes well, the house will now be hidden.
 
-> Can you now do this for the **ontsnapt!2**-sprite?
+> Can you now do this for the **escaped!2**-sprite?
 
 ### Show the other objects, with the correct costume
 
@@ -41,7 +41,7 @@ We are now going to make sure that all other objects are shown in the correct pl
 Some sprites have more than 1 costume, you can see this by clicking on the 'Costumes' tab at the top:  
 ![Tab Costumes](images/en/tab-costumes.png)
 
-1. Select the **tapijt**-sprite
+1. Select the **carpet**-sprite
 2. As above, drag the event "when the green flag is clicked" to the center
 3. Now find the following block at *Looks*, and drag it to your code field:  
    ![Looks | switch costume](images/en/looks-switchcostume.png)
@@ -51,19 +51,19 @@ Some sprites have more than 1 costume, you can see this by clicking on the 'Cost
 
 Does your code work? Test it!
 
-> Can you now do this for the **schilderij**-sprite, the **kluis**-sprite, and the **deur**-sprite?
+> Can you now do this for the **painting**-sprite, the **safe**-sprite, and the **door**-sprite?
 
 ### Starting position
 
 We also want every sprite to be shown in the correct place on the screen, so that it looks the same every time. To do this, we let Scratch know where the image should be in relation to the center of the screen. From left to right is indicated with an 'x', and from bottom to top with a 'y'. For this, let's start with the carpet.
 
-1. Select the **tapijt**-sprite
+1. Select the **carpet**-sprite
 2. Now find the following block at *Motion*, and drag it to your code field just **above** the "show" block:  
    ![Motion | go to x y](images/en/motion-goto_x_y.png)  
    This way we set the position right before showing it.
 3. Make sure the number after the `x` and the `y` is both a `0`
 
-> Can you now also do this for the **schilderij**-sprite, the **kluis**-sprite, the **deur**-sprite, and the cottage (i.e. the **ontsnapt!**-sprite - with this one, place it right **above** the "hide"-block)?
+> Can you now also do this for the **painting**-sprite, the **safe**-sprite, the **door**-sprite, and the cottage (i.e. the **escaped!**-sprite - with this one, place it right **above** the "hide"-block)?
 
 ## Look around and search the room
 
@@ -81,19 +81,19 @@ We are now going to make all these properties!
 
 First, we want to make sure you can lift the carpet, and slide the painting aside when you click on it. Clicking again should reset everything. We do this by using the different costumes for each sprite.
 
-1. Select the **tapijt**-sprite
+1. Select the **carpet**-sprite
 2. Now find the following block at *Events*, and drag it to an empty spot in your code field:  
    ![Events | sprite clicked](images/en/events-spriteclicked.png)
 3. Now find the following block at *Looks*, and drag it to your code field, and pin it to the correct event:  
    ![Looks | next costume](images/en/looks-nextcostume.png)
 
-> Can you now also do this for the **schilderij**-sprite?
+> Can you now also do this for the **painting**-sprite?
 
 ### Showing the safe code: Editing a look
 
 When you clicked on the painting, you may have noticed that there was no code written on the wall yet. We are now going to put a **created code** on the wall behind the painting, by editing the costume of the moved painting.
 
-1. Select the **schilderij**-sprite
+1. Select the **painting**-sprite
 2. Click on the 'Costumes' tab at the top
 3. Now select the second costume by clicking on it.  
    You should now see the moved painting in the middle of the screen
@@ -115,7 +115,7 @@ If you want to open the safe, we have to ask for a code. And if that code has be
 
 In Scratch, if you want to ask something to the user, or see if maybe a key has been pressed, or if the mouse might be moving, it's called "Observing". We're going to use this here.
 
-1. Select the **kluis**-sprite
+1. Select the **safe**-sprite
 2. Start a new piece of code, and start an event again when the sprite is clicked
 3. Now find the following block at *Sensing*, drag it to your code field, and pin it to the correct event:  
    ![Sensing - ask and wait](images/en/sensing-ask-wait.png)
@@ -174,7 +174,7 @@ The safe is now open. So now we want to show the key, and the key must also be u
 
 The key and the safe are two different sprites. Since you can only create Scratch blocks for one sprite, we need a way for one sprite to "talk" to another sprite. We do this with signals: The safe sends a message that it is open, and then any other sprite can listen to this message.
 
-1. Select the **kluis**-sprite
+1. Select the **safe**-sprite
 2. Now find the following block at *Events*, drag it to your code field, and pin it at the bottom of the if-then block where you changed the costume in the previous assignment:  
    ![Events - broadcast signal](images/en/events-broadcast.png)
 3. Now click on `message1` and choose "New message"
@@ -182,7 +182,7 @@ The key and the safe are two different sprites. Since you can only create Scratc
 
 A signal is now sent as soon as a correct code has been entered. Now we need to make the key respond to that message, and make it show.
 
-1. Select the **sleutel**-sprite
+1. Select the **key**-sprite
 2. Now find the following block at *Events*, and drag it to an empty spot in your code field:  
    ![Events - receive signal](images/en/events-receive.png)
 3. Now click on `message1` and choose the message you entered above (for example `Safe is open`)
@@ -211,7 +211,7 @@ To be able to drag a sprite during the game, we need to create something that wi
 In Scratch we can use repetition. In such a block you tell *what* should be repeated all the time, and *when* it should stop. As with the if-then block, we need a **condition** to tell what happens to the angular blocks:  
 ![Condition](images/condition.png)
 
-1. Select the **sleutel**-sprite
+1. Select the **key**-sprite
 2. Now find the following block at *Events*, and drag it to an empty spot in your code field:  
    ![Events | sprite clicked](images/en/events-spriteclicked.png)
 3. Now find the following block at *Control*, drag it to your code field, and pin it to the correct event:  
@@ -252,7 +252,7 @@ Or, to say this in another 'code' way:
 > To unlock the door, we have to use a signal again, for example a message `Door unlocked`. Can you now set this signal yourself at the key?  
 
 > Can you also unlock the door as soon as this signal is received?  
-> Hint: you need to add this code to the **deur**-sprite!  
+> Hint: you need to add this code to the **door**-sprite!  
 
 > Can you also hide the key after the door has been unlocked?  
 
@@ -264,16 +264,16 @@ The last thing we need to do is go out the door and tell you escaped!
 
 ### To go outside
 
-> Can you add to the **deur**-sprite the event when the sprite is clicked, then we show the **ontsnapt!**-sprite (the cottage)?  
+> Can you add to the **door**-sprite the event when the sprite is clicked, then we show the **escaped!**-sprite (the cottage)?  
 > Hint 1: You may only show the ontsnapt-sprite when the door is unlocked! Use an if-then block to check if the door is really unlocked (what costume should the door have?)  
-> Hint 2: Use a signal to tell the **ontsnapt!**-sprite to show. For example a message `Won`  
+> Hint 2: Use a signal to tell the **escaped!**-sprite to show. For example a message `Won`  
 
-> Can you also make the **ontsnapt!2**-sprite (the message "Je bent ontsnapt!") appear when the player has escaped?  
-> Hint: You can use the same signal as with the **ontsnapt!**-sprite.
+> Can you also make the **escaped!2**-sprite (the message "Je bent escaped!") appear when the player has escaped?  
+> Hint: You can use the same signal as with the **escaped!**-sprite.
 
 ### Effects
 
-Use the code blocks below to add a fun effect to the **ontsnapt!2**-sprite, once it receives a message that the player has won.
+Use the code blocks below to add a fun effect to the **escaped!2**-sprite, once it receives a message that the player has won.
 
 ![Looks - effects](images/en/looks-effects.png)
 
