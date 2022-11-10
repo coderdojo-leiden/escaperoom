@@ -7,7 +7,7 @@ Zo ziet het er uit als je de opdracht klaar hebt:
 
 ![escaperoom voltooid project](images/nl/finished-project.gif)
 
-We beginnen met een leeg project waar alle benodigde sprites al in zitten. Op deze manier hoef je je alleen maar druk te maken om de code-blokken! Dit lege project kun je in de Scratch editor openen via ons [escaperoom startproject](https://scratch.mit.edu/projects/756757402/editor). Gebruik je de Sratch offline editor (die je [hier](https://scratch.mit.edu/download) kunt downloaden), dan kun je het startproject ook [hier](resources/escaperoom_nl.sb3) downloaden en daarna in de offline editor laden.
+We beginnen met een leeg project waar alle benodigde sprites al in zitten. Op deze manier hoef je je alleen maar druk te maken om de code-blokken! Dit lege project kun je in de Scratch editor openen via ons [escaperoom startproject](https://scratch.mit.edu/projects/756757402/editor). Gebruik je de Scratch offline editor (die je [hier](https://scratch.mit.edu/download) kunt downloaden), dan kun je het startproject ook [hier](resources/escaperoom_nl.sb3) downloaden en daarna in de offline editor laden.
 
 ## Startsituatie
 
