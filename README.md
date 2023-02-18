@@ -283,6 +283,6 @@ Als het goed is heb je nu alle belangrijke code toegevoegd om het spel uit te sp
 
 Veel speelplezier!
 
-Het project waarop deze opdracht is gebaseerd kun je [hier](https://scratch.mit.edu/projects/578306126/) bekijken en het voltooide project kun je ook [hier](solutions/escaperoom.sb3) downloaden voor de offline Scratch editor.
+Het project waarop deze opdracht is gebaseerd heet [The Big Escape](https://scratch.mit.edu/projects/400881055/) en is gemaakt door Celine de Klerk.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons-Licentie" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Dit werk valt onder een <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl">Creative Commons Naamsvermelding-NietCommercieel-GelijkDelen 4.0 Internationaal-licentie</a>.
