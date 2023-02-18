@@ -283,6 +283,6 @@ You should now have added all the important code to complete the game. Can you p
 
 Have lots of fun!
 
-The project on which this assignment is based can be viewed [here](https://scratch.mit.edu/projects/578306126/) and the completed project can also be downloaded [here](solutions/escaperoom.sb3) for the offline Scratch editor.
+The project on which this assignment is based is called [The Big Escape](https://scratch.mit.edu/projects/400881055/), and is created by Celine de Klerk.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
