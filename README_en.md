@@ -1,6 +1,8 @@
 # Escaperoom
 *Build an escape room in Scratch*
 
+[Nederlands](index.html) | **English**
+
 In this assignment we are going to build an escape room ourselves. We start in a room with some stuff (like a carpet, a painting, and a safe). The door in that room is 'locked'. The objective of the game is to open the door by clicking on it so you can get out.
 
 This is what it will look like when you have completed the assignment:

@@ -1,6 +1,8 @@
 # Escaperoom
 *Bouw een escaperoom in Scratch*
 
+**Nederlands** | [English](README_en.html)
+
 In deze opdracht gaan we zelf een escaperoom bouwen. We beginnen in een kamer met wat spullen (zoals een tapijt, een schilderij, en een kluis). De deur in die kamer is 'op slot'. Het doel van het spel is om de deur open te maken door erop te klikken, zodat je naar buiten kunt.
 
 Zo ziet het er uit als je de opdracht klaar hebt:
