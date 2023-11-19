@@ -9,7 +9,7 @@ This is what it will look like when you have completed the assignment:
 
 ![escaperoom finished project](images/en/finished-project.gif)
 
-We'll start with an empty project that already has all the necessary sprites in it. This way you only have to worry about the code blocks! You can open this empty project in the Scratch editor via our [escaperoom starter project](https://scratch.mit.edu/projects/629181159/editor). If you use the Scratch offline editor (which you can download [here](https://scratch.mit.edu/download)), you can also download the starter project [here](resources/escaperoom_en.sb3) and then load it in the offline editor.
+We'll start with an empty project that already has all the necessary sprites in it. This way you only have to worry about the code blocks! You can open this empty project in the Scratch editor via our [escaperoom starter project](https://scratch.mit.edu/projects/629181159/editor) (at coderdojo-leiden.nl/escaperoom-start-en). If you use the Scratch offline editor (which you can download at [scratch.mit.edu/download](https://scratch.mit.edu/download)), you can also [download](resources/escaperoom_en.sb3) the starter project and then load it in the offline editor.
 
 ## Starting situation
 
